@@ -1,0 +1,87 @@
+2025-07-04 22:41:43,095 - INFO - ML Model: Loaded existing model from f:\AI-Projects\SaaSquatchy_Project\lead_scoring_tool\src\..\models\lead_scorer.pkl
+2025-07-04 22:41:43,096 - INFO - --- Score Module Test Run ---
+2025-07-04 22:41:43,096 - INFO - test_leads_for_scoring.csv not found, generating mock data for scoring test...
+2025-07-04 22:41:43,145 - INFO - Mock data generated for testing.
+2025-07-04 22:41:43,145 - INFO - Scoring: Starting lead scoring for 7 leads.
+2025-07-04 22:41:43,487 - INFO - Scoring: Leads scored successfully.
+2025-07-04 22:41:43,492 - INFO - Scoring: Scored leads saved to CSV: f:\AI-Projects\SaaSquatchy_Project\lead_scoring_tool\src\..\data\test_leads_for_scoring.csv
+2025-07-04 22:41:43,585 - INFO - Scoring: Model re-trained and saved to f:\AI-Projects\SaaSquatchy_Project\lead_scoring_tool\src\..\models\lead_scorer.pkl
+2025-07-04 22:41:43,608 - INFO - 
+First 10 leads after scoring (sorted by score):
+2025-07-04 22:41:43,642 - INFO -           company_name         industry                            address  revenue  score
+0    AI Solutions Inc.       Technology  123 Silicon Valley, San Francisco  2500000   0.89
+4  Quantum Innovations               AI       404 Innovation Dr, Bangalore  3000000   0.88
+6    BioPharm Research          Biotech         99 Bio Blvd, San Francisco  2200000   0.86
+1      MediCorp Global       Healthcare              456 Main St, New York  1800000   0.84
+2       Local Cafe Co.  Food & Beverage            789 Elm St, Los Angeles   600000   0.21
+3    Fashion Retailers           Retail              101 Broadway, Chicago   300000   0.20
+5  Investment Pros LLC          Finance            888 Capital Rd, Houston  1000000   0.14
+2025-07-04 22:41:43,645 - INFO - 
+Generated outreach template for top lead:
+2025-07-04 22:41:43,645 - INFO - Subject: Partnership Opportunity with AI Solutions Inc. - High Potential Lead
+
+Dear Sir/Madam,
+
+We at Caprae Capital specialize in transforming businesses through strategic initiatives and AI leverage. Your company, operating in the Technology sector, stands out as a high-potential opportunity for our M&A as a Service model.
+
+**Key Insight:** The technology sector is experiencing rapid growth in AI integration, making companies like this prime candidates for strategic investment in an M&A context.
+
+We believe our unique approach, which includes introducing practical AI solutions and operational streamlining, can help AI Solutions Inc. unlock new growth opportunities and achieve significant value creation.
+
+Given AI Solutions Inc.'s revenue of their estimated revenue, we see significant potential for synergistic growth.
+
+We would be keen to explore how a partnership with Caprae Capital could lead to a successful, long-term journey for AI Solutions Inc..
+
+Please let us know your availability for a brief introductory call.
+
+Best regards,
+
+[Your Name]
+[Your Title]
+Caprae Capital
+[Your Contact Information]
+
+2025-07-04 22:41:43,646 - INFO - --- Score Module Test Run Finished ---
+2025-07-04 22:48:14,738 - INFO - ML Model: Loaded existing model from f:\AI-Projects\SaaSquatchy_Project\lead_scoring_tool\src\..\models\lead_scorer.pkl
+2025-07-04 22:48:14,746 - INFO - --- Score Module Test Run ---
+2025-07-04 22:48:14,849 - INFO - Loaded existing 7 leads from 'f:\AI-Projects\SaaSquatchy_Project\lead_scoring_tool\src\..\data\test_leads_for_scoring.csv' for scoring testing.
+2025-07-04 22:48:14,849 - INFO - Scoring: Starting lead scoring for 7 leads.
+2025-07-04 22:48:15,259 - INFO - Scoring: Leads scored successfully.
+2025-07-04 22:48:15,350 - INFO - Scoring: Scored leads saved to CSV: f:\AI-Projects\SaaSquatchy_Project\lead_scoring_tool\src\..\data\test_leads_for_scoring.csv
+2025-07-04 22:48:15,735 - INFO - Scoring: Model re-trained and saved to f:\AI-Projects\SaaSquatchy_Project\lead_scoring_tool\src\..\models\lead_scorer.pkl
+2025-07-04 22:48:15,903 - INFO - 
+First 10 leads after scoring (sorted by score):
+2025-07-04 22:48:16,060 - INFO -           company_name         industry                            address  revenue  score
+1  Quantum Innovations               AI       404 Innovation Dr, Bangalore  3000000   0.93
+2    BioPharm Research          Biotech         99 Bio Blvd, San Francisco  2200000   0.93
+0    AI Solutions Inc.       Technology  123 Silicon Valley, San Francisco  2500000   0.86
+3      MediCorp Global       Healthcare              456 Main St, New York  1800000   0.85
+6  Investment Pros LLC          Finance            888 Capital Rd, Houston  1000000   0.14
+4       Local Cafe Co.  Food & Beverage            789 Elm St, Los Angeles   600000   0.13
+5    Fashion Retailers           Retail              101 Broadway, Chicago   300000   0.12
+2025-07-04 22:48:16,065 - INFO - 
+Generated outreach template for top lead:
+2025-07-04 22:48:16,066 - INFO - Subject: Partnership Opportunity with Quantum Innovations - High Potential Lead
+
+Dear Sir/Madam,
+
+We at Caprae Capital specialize in transforming businesses through strategic initiatives and AI leverage. Your company, operating in the AI sector, stands out as a high-potential opportunity for our M&A as a Service model.
+
+**Key Insight:** The technology sector is experiencing rapid growth in AI integration, making companies like this prime candidates for strategic investment in an M&A context.
+
+We believe our unique approach, which includes introducing practical AI solutions and operational streamlining, can help Quantum Innovations unlock new growth opportunities and achieve significant value creation.
+
+Given Quantum Innovations's revenue of their estimated revenue, we see significant potential for synergistic growth.
+
+We would be keen to explore how a partnership with Caprae Capital could lead to a successful, long-term journey for Quantum Innovations.
+
+Please let us know your availability for a brief introductory call.
+
+Best regards,
+
+[Your Name]
+[Your Title]
+Caprae Capital
+[Your Contact Information]
+
+2025-07-04 22:48:16,068 - INFO - --- Score Module Test Run Finished ---

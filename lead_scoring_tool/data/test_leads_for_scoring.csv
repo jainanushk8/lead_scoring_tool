@@ -1,0 +1,8 @@
+company_name,industry,address,revenue,score
+Quantum Innovations,AI,"404 Innovation Dr, Bangalore",3000000,0.93
+BioPharm Research,Biotech,"99 Bio Blvd, San Francisco",2200000,0.93
+AI Solutions Inc.,Technology,"123 Silicon Valley, San Francisco",2500000,0.86
+MediCorp Global,Healthcare,"456 Main St, New York",1800000,0.85
+Investment Pros LLC,Finance,"888 Capital Rd, Houston",1000000,0.14
+Local Cafe Co.,Food & Beverage,"789 Elm St, Los Angeles",600000,0.13
+Fashion Retailers,Retail,"101 Broadway, Chicago",300000,0.12

@@ -1,0 +1,13 @@
+requests==2.31.0
+beautifulsoup4==4.12.2
+pandas==2.2.2
+streamlit==1.38.0
+scikit-learn==1.5.1
+transformers==4.44.2
+wikipedia-api==0.6.0
+torch
+joblib
+plotly
+pytest
+streamlit-authenticator
+pyyaml

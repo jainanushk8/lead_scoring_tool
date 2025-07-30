@@ -1,0 +1,968 @@
+2025-07-04 21:26:14,064 - INFO - Wikipedia: language=en, user_agent: SaaSquatchyLeadGenBot/1.0 (contact@yourdomain.com) (Wikipedia-API/0.6.0; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-07-04 21:26:14,065 - INFO - Wikipedia API initialized with timeout.
+2025-07-04 21:26:20,023 - INFO - T5-small summarization pipeline loaded.
+2025-07-04 21:26:20,024 - INFO - --- RAG Module Test Run ---
+2025-07-04 21:26:20,025 - INFO - Attempting to enrich leads with RAG insights...
+2025-07-04 21:26:20,026 - INFO - RAG Process: Starting enrichment with input_csv='f:\AI-Projects\SaaSquatchy_Project\lead_scoring_tool\src\..\data\leads.csv' and output_csv='f:\AI-Projects\SaaSquatchy_Project\lead_scoring_tool\src\..\data\leads.csv'.
+2025-07-04 21:26:20,280 - INFO - RAG Process: Successfully read 200 leads from 'f:\AI-Projects\SaaSquatchy_Project\lead_scoring_tool\src\..\data\leads.csv'.
+2025-07-04 21:26:20,281 - INFO - DB: Attempting to connect to database and ensure tables.
+2025-07-04 21:26:20,344 - INFO - DB: Database connection successful and tables checked/created.
+2025-07-04 21:26:20,520 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:20,523 - INFO - Insight Fetcher: Trying Wikipedia search for 'Real Estate'.
+2025-07-04 21:26:20,524 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Real Estate&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:20,524 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Real Estate': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:20,525 - INFO - Insight Fetcher: Trying Wikipedia search for 'Real Estate industry'.
+2025-07-04 21:26:20,525 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Real Estate industry&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:20,525 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Real Estate industry': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:20,526 - INFO - Insight Fetcher: Trying Wikipedia search for 'Real Estate market'.
+2025-07-04 21:26:20,526 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Real Estate market&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:20,527 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Real Estate market': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:20,527 - INFO - Insight Fetcher: Trying Wikipedia search for 'Real Estate business'.
+2025-07-04 21:26:20,528 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Real Estate business&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:20,528 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Real Estate business': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:20,528 - INFO - Insight Fetcher: Trying Wikipedia search for 'Real Estate economic impact'.
+2025-07-04 21:26:20,528 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Real Estate economic impact&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:20,529 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Real Estate economic impact': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:20,529 - INFO - Insight Fetcher: Trying Wikipedia search for 'Real Estate trends'.
+2025-07-04 21:26:20,530 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Real Estate trends&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:20,592 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Real Estate trends': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:20,593 - WARNING - Insight Fetcher: No suitable Wikipedia summary found for 'Real Estate'. Using fallback message.
+2025-07-04 21:26:21,016 - INFO - Insight Fetcher: Cached insight for 'Real Estate'.
+2025-07-04 21:26:21,016 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,017 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,017 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:21,018 - INFO - Insight Fetcher: Trying Wikipedia search for 'Construction'.
+2025-07-04 21:26:21,020 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Construction&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:21,020 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Construction': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:21,021 - INFO - Insight Fetcher: Trying Wikipedia search for 'Construction industry'.
+2025-07-04 21:26:21,022 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Construction industry&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:21,023 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Construction industry': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:21,023 - INFO - Insight Fetcher: Trying Wikipedia search for 'Construction market'.
+2025-07-04 21:26:21,024 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Construction market&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:21,025 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Construction market': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:21,025 - INFO - Insight Fetcher: Trying Wikipedia search for 'Construction business'.
+2025-07-04 21:26:21,026 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Construction business&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:21,026 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Construction business': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:21,027 - INFO - Insight Fetcher: Trying Wikipedia search for 'Construction economic impact'.
+2025-07-04 21:26:21,029 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Construction economic impact&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:21,029 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Construction economic impact': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:21,031 - INFO - Insight Fetcher: Trying Wikipedia search for 'Construction trends'.
+2025-07-04 21:26:21,032 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Construction trends&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:21,033 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Construction trends': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:21,034 - WARNING - Insight Fetcher: No suitable Wikipedia summary found for 'Construction'. Using fallback message.
+2025-07-04 21:26:21,179 - INFO - Insight Fetcher: Cached insight for 'Construction'.
+2025-07-04 21:26:21,180 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:21,181 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:21,181 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:26:21,182 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:26:21,183 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:21,184 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:21,184 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,185 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,186 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:21,187 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:21,188 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:21,189 - INFO - Insight Fetcher: Trying Wikipedia search for 'Education'.
+2025-07-04 21:26:21,192 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Education&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:21,194 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Education': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:21,195 - INFO - Insight Fetcher: Trying Wikipedia search for 'Education industry'.
+2025-07-04 21:26:21,196 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Education industry&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:21,197 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Education industry': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:21,198 - INFO - Insight Fetcher: Trying Wikipedia search for 'Education market'.
+2025-07-04 21:26:21,198 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Education market&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:21,199 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Education market': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:21,200 - INFO - Insight Fetcher: Trying Wikipedia search for 'Education business'.
+2025-07-04 21:26:21,200 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Education business&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:21,204 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Education business': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:21,205 - INFO - Insight Fetcher: Trying Wikipedia search for 'Education economic impact'.
+2025-07-04 21:26:21,206 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Education economic impact&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:21,208 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Education economic impact': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:21,210 - INFO - Insight Fetcher: Trying Wikipedia search for 'Education trends'.
+2025-07-04 21:26:21,210 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Education trends&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:21,213 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Education trends': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:21,216 - WARNING - Insight Fetcher: No suitable Wikipedia summary found for 'Education'. Using fallback message.
+2025-07-04 21:26:21,387 - INFO - Insight Fetcher: Cached insight for 'Education'.
+2025-07-04 21:26:21,387 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:21,388 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:21,389 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:21,390 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:21,391 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:26:21,392 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:26:21,393 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:21,394 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:21,395 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:21,396 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:21,397 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:21,398 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:21,399 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,400 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,400 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,401 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,401 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:21,402 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:21,402 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:26:21,404 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:26:21,405 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:26:21,407 - INFO - Insight Fetcher: Trying Wikipedia search for 'Hospitality'.
+2025-07-04 21:26:21,408 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Hospitality&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:21,409 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Hospitality': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:21,412 - INFO - Insight Fetcher: Trying Wikipedia search for 'Hospitality industry'.
+2025-07-04 21:26:21,413 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Hospitality industry&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:21,413 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Hospitality industry': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:21,414 - INFO - Insight Fetcher: Trying Wikipedia search for 'Hospitality market'.
+2025-07-04 21:26:21,415 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Hospitality market&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:21,416 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Hospitality market': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:21,417 - INFO - Insight Fetcher: Trying Wikipedia search for 'Hospitality business'.
+2025-07-04 21:26:21,419 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Hospitality business&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:21,420 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Hospitality business': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:21,420 - INFO - Insight Fetcher: Trying Wikipedia search for 'Hospitality economic impact'.
+2025-07-04 21:26:21,421 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Hospitality economic impact&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:21,422 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Hospitality economic impact': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:21,422 - INFO - Insight Fetcher: Trying Wikipedia search for 'Hospitality trends'.
+2025-07-04 21:26:21,424 - INFO - Request URL: https://en.wikipedia.org/w/api.php?action=query&prop=info&titles=Hospitality trends&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle
+2025-07-04 21:26:21,428 - ERROR - Insight Fetcher: General error during Wikipedia/summarization for 'Hospitality trends': Session.request() got an unexpected keyword argument 'requests_kwargs'
+2025-07-04 21:26:21,429 - WARNING - Insight Fetcher: No suitable Wikipedia summary found for 'Hospitality'. Using fallback message.
+2025-07-04 21:26:21,549 - INFO - Insight Fetcher: Cached insight for 'Hospitality'.
+2025-07-04 21:26:21,555 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:21,559 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:21,560 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:21,561 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:21,562 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:21,564 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:21,565 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:26:21,566 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:26:21,567 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:21,569 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:21,570 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:21,571 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:21,571 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:26:21,572 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:26:21,573 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,573 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,575 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:21,576 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:21,577 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:21,577 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:21,578 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:21,579 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:21,579 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:26:21,580 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:26:21,581 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:21,582 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:21,584 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:21,586 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:21,587 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:26:21,588 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:26:21,588 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:21,590 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:21,590 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,591 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,591 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:21,592 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:21,593 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:21,594 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:21,594 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:21,595 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:21,595 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:21,596 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:21,596 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,597 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,598 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:21,599 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:21,601 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:21,602 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:21,602 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,603 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,604 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,605 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,605 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:21,607 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:21,608 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:26:21,609 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:26:21,610 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:26:21,612 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:26:21,613 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:26:21,614 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:26:21,615 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,616 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,618 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:21,619 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:21,621 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,623 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,624 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:21,625 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:21,625 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:21,628 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:21,630 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,633 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,634 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:21,635 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:21,636 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:21,637 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:21,639 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:21,641 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:21,642 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:21,644 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:21,646 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:21,647 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:21,651 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:21,652 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:21,654 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:26:21,658 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:26:21,662 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:21,663 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:21,664 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:21,665 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:21,666 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:21,667 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:21,667 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:21,668 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:21,669 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:21,671 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:21,672 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:21,673 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:21,678 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:21,678 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:21,679 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:21,680 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:21,681 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:21,682 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:21,684 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:26:21,689 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:26:21,693 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:21,697 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:21,698 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:21,700 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:21,701 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:21,704 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:21,705 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:21,709 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:21,710 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:21,712 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:21,712 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:21,713 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:21,714 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:21,715 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:21,717 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,718 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,718 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:21,719 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:21,721 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:26:21,722 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:26:21,724 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:21,725 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:21,726 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:21,728 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:21,729 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,729 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,730 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:21,731 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:21,732 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:26:21,733 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:26:21,736 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:21,743 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:21,756 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,767 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,776 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:26:21,783 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:26:21,796 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,802 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,807 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:21,814 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:21,816 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:21,819 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:21,823 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:21,826 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:21,827 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:21,828 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:21,828 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:21,829 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:21,831 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,840 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,844 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:26:21,846 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:26:21,846 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:21,848 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:21,849 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:21,855 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:21,857 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:21,858 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:21,859 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:21,861 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:21,862 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:21,863 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:21,866 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:21,867 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:21,867 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:21,868 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:21,872 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,873 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,874 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:21,875 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:21,876 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:26:21,878 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:26:21,879 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,880 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,881 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:21,882 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:21,886 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:26:21,888 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:26:21,890 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,891 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,892 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:26:21,893 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:26:21,896 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:21,897 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:21,898 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:21,900 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:21,901 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,904 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,904 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:21,907 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:21,908 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:26:21,911 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:26:21,914 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:21,915 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:21,916 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:21,918 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:21,919 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:26:21,922 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:26:21,922 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:21,924 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:21,925 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:21,925 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:21,934 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:21,936 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:21,937 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:21,940 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:21,942 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:21,951 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:21,952 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:26:21,955 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:26:21,958 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:21,963 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:21,964 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:21,967 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:21,968 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:21,973 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:21,975 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:21,978 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:21,981 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,983 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,984 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:21,986 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:21,987 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:21,988 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:21,989 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:22,013 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:22,016 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:22,021 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:22,026 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:26:22,031 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:26:22,036 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:22,043 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:22,045 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:22,048 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:22,049 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:22,051 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:22,052 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:22,055 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:22,057 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:22,058 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:22,059 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:22,061 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:22,062 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:26:22,067 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:26:22,069 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:22,071 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:22,072 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:22,073 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:22,075 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:22,077 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:22,078 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:22,079 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:22,080 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:22,081 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:22,083 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:22,085 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:22,087 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:22,088 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:22,089 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:22,090 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:22,091 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:22,092 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:22,094 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:26:22,095 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:26:22,096 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:22,099 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:22,100 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:22,103 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:22,103 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:22,105 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:22,105 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:22,106 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:22,107 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:22,107 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:22,108 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:22,109 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:22,110 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:22,111 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:22,111 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:22,112 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:22,113 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:22,115 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:22,116 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:22,117 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:22,121 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:22,124 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:22,125 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:22,126 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:22,127 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:22,128 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:22,129 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:22,133 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:22,135 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:22,136 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:22,137 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:22,138 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:22,138 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:26:22,141 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:26:22,142 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:26:22,143 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:26:22,143 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:22,145 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:22,146 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:26:22,147 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:26:22,149 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:26:22,153 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:26:22,153 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:22,155 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:22,157 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:22,158 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:22,159 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:22,163 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:22,163 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:26:22,167 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:26:22,170 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:26:22,171 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:26:22,173 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:26:22,176 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:26:22,177 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:22,180 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:22,222 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:22,243 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:22,288 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:26:22,299 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:26:22,309 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:22,323 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:22,339 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:22,349 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:22,353 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:22,360 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:22,363 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:26:22,372 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:26:22,375 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:22,379 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:22,383 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:22,386 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:22,387 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:26:22,389 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:26:22,390 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:22,392 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:22,392 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:26:22,394 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:26:22,395 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:22,397 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:22,398 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:26:22,399 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:26:22,399 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:26:22,401 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:26:22,401 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:26:22,403 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:26:22,405 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:26:22,407 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:26:22,408 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:26:22,409 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:26:22,413 - INFO - RAG Process: All industries processed for insights.
+2025-07-04 21:26:22,462 - INFO - RAG Process: Enriched data saved to CSV: f:\AI-Projects\SaaSquatchy_Project\lead_scoring_tool\src\..\data\leads.csv
+2025-07-04 21:26:22,776 - INFO - RAG Process: Enriched leads saved to DB: f:\AI-Projects\SaaSquatchy_Project\lead_scoring_tool\src\..\data\leads.db
+2025-07-04 21:26:22,834 - INFO - 
+First 5 leads after RAG enrichment (showing company, industry, and insights):
+2025-07-04 21:26:23,066 - INFO -                company_name      industry                                                                                                                                                                                                                                                                                                                                                                                                  insights
+0                   Wang Co   Real Estate                                                                                                                                                                                                                      Could not retrieve specific strategic insights for 'Real Estate' from Wikipedia after multiple attempts. General overview might be limited or content not directly business-focused.
+1              Barton, Corp    Technology                                                                                                                                                                  technology is the application of conceptual knowledge to achieve practical goals . technology plays a critical role in science, engineering, and everyday life . technological advancements have led to significant changes in society .
+2           Houston Systems  Construction                                                                                                                                                                                                                     Could not retrieve specific strategic insights for 'Construction' from Wikipedia after multiple attempts. General overview might be limited or content not directly business-focused.
+3  Scott-Rodriguez Partners    Healthcare  health care is the improvement or maintenance of health through prevention, diagnosis, treatment, amelioration or cure of disease, illness, injury, and other physical and mental impairments . access to health care may vary across countries, communities, and individuals . factors to consider in terms of health care access include financial limitations, geographical and logistical barriers .
+4               Myers, Corp        Retail                                                                                                                                                                                          retailers are the final link in the supply chain from producers to consumers . retail markets and shops have a long history, dating back to antiquity . some of the earliest retailers were itinerant peddlers .
+2025-07-04 21:26:23,068 - INFO - --- RAG Module Test Run Finished ---
+2025-07-04 21:32:24,166 - INFO - Wikipedia: language=en, user_agent: SaaSquatchyLeadGenBot/1.0 (contact@yourdomain.com) (Wikipedia-API/0.6.0; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-07-04 21:32:24,180 - INFO - Wikipedia API initialized with timeout.
+2025-07-04 21:32:28,868 - INFO - T5-small summarization pipeline loaded.
+2025-07-04 21:32:28,870 - INFO - --- RAG Module Test Run ---
+2025-07-04 21:32:28,870 - INFO - Attempting to enrich leads with RAG insights...
+2025-07-04 21:32:28,879 - INFO - RAG Process: Starting enrichment with input_csv='f:\AI-Projects\SaaSquatchy_Project\lead_scoring_tool\src\..\data\leads.csv' and output_csv='f:\AI-Projects\SaaSquatchy_Project\lead_scoring_tool\src\..\data\leads.csv'.
+2025-07-04 21:32:29,014 - INFO - RAG Process: Successfully read 200 leads from 'f:\AI-Projects\SaaSquatchy_Project\lead_scoring_tool\src\..\data\leads.csv'.
+2025-07-04 21:32:29,014 - INFO - DB: Attempting to connect to database and ensure tables.
+2025-07-04 21:32:29,052 - INFO - DB: Database connection successful and tables checked/created.
+2025-07-04 21:32:29,176 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,188 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,189 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,189 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,190 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,190 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,191 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,191 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,191 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:32:29,192 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:32:29,192 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,192 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,193 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,193 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,194 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,194 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,194 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,195 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,196 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,196 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,197 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,197 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,198 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:32:29,198 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:32:29,198 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,199 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,199 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,200 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,201 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,202 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,202 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,203 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,203 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,204 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,217 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,218 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,219 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:32:29,219 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:32:29,219 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:32:29,220 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:32:29,220 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,221 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,221 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,222 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,223 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,223 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,224 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:32:29,224 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:32:29,225 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,225 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,225 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,226 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,226 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:32:29,226 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:32:29,227 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,227 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,228 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,228 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,229 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,230 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,230 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,231 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,231 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:32:29,233 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:32:29,234 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,234 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,235 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,236 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,236 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:32:29,237 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:32:29,237 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,238 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,238 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,239 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,239 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,240 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,240 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,241 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,241 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,242 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,242 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,243 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,243 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,244 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,244 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,245 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,245 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,246 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,246 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,247 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,248 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,248 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,249 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,251 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,251 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:32:29,252 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:32:29,253 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:32:29,253 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:32:29,253 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:32:29,254 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:32:29,254 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,255 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,255 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,255 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,256 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,256 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,256 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,257 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,257 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,257 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,258 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,258 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,258 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,259 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,259 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,259 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,259 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,260 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,260 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,260 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,261 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,261 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,261 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,262 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,262 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:32:29,263 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:32:29,264 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,265 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,265 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,265 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,266 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,267 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,267 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,268 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,268 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,269 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,269 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,270 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,270 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,270 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,271 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,271 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,271 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,272 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,272 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:32:29,272 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:32:29,272 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,273 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,273 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,274 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,274 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,274 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,275 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,275 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,275 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,276 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,276 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,277 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,277 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,277 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,278 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,278 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,278 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,278 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,280 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:32:29,281 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:32:29,281 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,282 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,282 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,283 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,284 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,284 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,285 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,285 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,285 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:32:29,286 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:32:29,286 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,287 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,287 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,287 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,288 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:32:29,288 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:32:29,288 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,289 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,289 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,289 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,290 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,290 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,291 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,291 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,291 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,292 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,292 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,293 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,293 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,294 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,294 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:32:29,295 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:32:29,297 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,298 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,298 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,299 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,299 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,300 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,300 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,301 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,301 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,302 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,302 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,303 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,304 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,304 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,305 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,306 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,306 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,307 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,308 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:32:29,309 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:32:29,309 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,310 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,310 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,311 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,312 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:32:29,312 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:32:29,313 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,314 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,314 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:32:29,314 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:32:29,315 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,315 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,316 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,316 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,316 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,317 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,317 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,318 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,318 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:32:29,318 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:32:29,319 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,319 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,320 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,320 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,320 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:32:29,321 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:32:29,321 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,322 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,322 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,323 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,323 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,324 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,325 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,325 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,326 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,327 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,327 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:32:29,328 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:32:29,328 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,329 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,330 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,331 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,331 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,332 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,332 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,333 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,333 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,334 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,335 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,336 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,336 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,337 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,337 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,338 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,338 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,338 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,339 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:32:29,339 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:32:29,339 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,340 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,340 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,341 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,342 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,342 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,343 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,343 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,344 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,344 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,344 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,345 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,345 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:32:29,346 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:32:29,347 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,347 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,348 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,348 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,349 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,349 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,350 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,351 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,352 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,352 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,353 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,353 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,354 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,354 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,354 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,355 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,355 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,356 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,356 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:32:29,356 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:32:29,357 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,357 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,358 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,358 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,359 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,360 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,360 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,360 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,361 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,361 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,361 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,362 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,363 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,363 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,364 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,364 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,364 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,365 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,365 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,366 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,366 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,367 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,368 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,369 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,369 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,369 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,370 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,370 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,371 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,371 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,371 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,372 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,373 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:32:29,373 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:32:29,373 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:32:29,374 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:32:29,374 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,375 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,375 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:32:29,376 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:32:29,376 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 21:32:29,376 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 21:32:29,377 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,377 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,378 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,378 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,379 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,379 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,380 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:32:29,381 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:32:29,381 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:32:29,382 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:32:29,382 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:32:29,383 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:32:29,383 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,384 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,385 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,385 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,386 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:32:29,386 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:32:29,387 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,387 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,388 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,388 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,389 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,389 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,389 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:32:29,390 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:32:29,390 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,391 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,391 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,392 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,392 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 21:32:29,392 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 21:32:29,393 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,393 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,394 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 21:32:29,394 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 21:32:29,394 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,395 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,395 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 21:32:29,396 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 21:32:29,396 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 21:32:29,397 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 21:32:29,397 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 21:32:29,398 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 21:32:29,398 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 21:32:29,399 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 21:32:29,399 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 21:32:29,399 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 21:32:29,424 - INFO - RAG Process: All industries processed for insights.
+2025-07-04 21:32:29,509 - INFO - RAG Process: Enriched data saved to CSV: f:\AI-Projects\SaaSquatchy_Project\lead_scoring_tool\src\..\data\leads.csv
+2025-07-04 21:32:29,925 - INFO - RAG Process: Enriched leads saved to DB: f:\AI-Projects\SaaSquatchy_Project\lead_scoring_tool\src\..\data\leads.db
+2025-07-04 21:32:29,933 - INFO - 
+First 5 leads after RAG enrichment (showing company, industry, and insights):
+2025-07-04 21:32:30,084 - INFO -                company_name      industry                                                                                                                                                                                                                                                                                                                                                                                                  insights
+0                   Wang Co   Real Estate                                                                                                                                                                                                                      Could not retrieve specific strategic insights for 'Real Estate' from Wikipedia after multiple attempts. General overview might be limited or content not directly business-focused.
+1              Barton, Corp    Technology                                                                                                                                                                  technology is the application of conceptual knowledge to achieve practical goals . technology plays a critical role in science, engineering, and everyday life . technological advancements have led to significant changes in society .
+2           Houston Systems  Construction                                                                                                                                                                                                                     Could not retrieve specific strategic insights for 'Construction' from Wikipedia after multiple attempts. General overview might be limited or content not directly business-focused.
+3  Scott-Rodriguez Partners    Healthcare  health care is the improvement or maintenance of health through prevention, diagnosis, treatment, amelioration or cure of disease, illness, injury, and other physical and mental impairments . access to health care may vary across countries, communities, and individuals . factors to consider in terms of health care access include financial limitations, geographical and logistical barriers .
+4               Myers, Corp        Retail                                                                                                                                                                                          retailers are the final link in the supply chain from producers to consumers . retail markets and shops have a long history, dating back to antiquity . some of the earliest retailers were itinerant peddlers .
+2025-07-04 21:32:30,085 - INFO - --- RAG Module Test Run Finished ---
+2025-07-04 22:49:18,502 - INFO - Wikipedia: language=en, user_agent: SaaSquatchyLeadGenBot/1.0 (contact@yourdomain.com) (Wikipedia-API/0.6.0; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-07-04 22:49:18,520 - INFO - Wikipedia API initialized with timeout.
+2025-07-04 22:49:22,787 - INFO - T5-small summarization pipeline loaded.
+2025-07-04 22:49:22,788 - INFO - --- RAG Module Test Run ---
+2025-07-04 22:49:22,830 - INFO - Loaded existing 200 leads from 'f:\AI-Projects\SaaSquatchy_Project\lead_scoring_tool\src\..\data\leads.csv' for RAG testing.
+2025-07-04 22:49:22,832 - INFO - Attempting to enrich leads with RAG insights...
+2025-07-04 22:49:22,833 - INFO - RAG Process: Starting enrichment with 200 leads.
+2025-07-04 22:49:22,836 - INFO - Added 'id' column to DataFrame for robust processing.
+2025-07-04 22:49:22,837 - INFO - DB: Attempting to connect to database at f:\AI-Projects\SaaSquatchy_Project\lead_scoring_tool\src\..\data\leads.db and ensure tables.
+2025-07-04 22:49:22,896 - INFO - DB: Database connection successful and tables checked/created.
+2025-07-04 22:49:22,943 - INFO - Insight Fetcher: Starting for industry 'Real Estate'.
+2025-07-04 22:49:22,944 - INFO - Insight Fetcher: Found cached insight for 'Real Estate'.
+2025-07-04 22:49:22,944 - INFO - Insight Fetcher: Starting for industry 'Technology'.
+2025-07-04 22:49:22,957 - INFO - Insight Fetcher: Found cached insight for 'Technology'.
+2025-07-04 22:49:22,957 - INFO - Insight Fetcher: Starting for industry 'Construction'.
+2025-07-04 22:49:22,958 - INFO - Insight Fetcher: Found cached insight for 'Construction'.
+2025-07-04 22:49:22,958 - INFO - Insight Fetcher: Starting for industry 'Healthcare'.
+2025-07-04 22:49:22,959 - INFO - Insight Fetcher: Found cached insight for 'Healthcare'.
+2025-07-04 22:49:22,959 - INFO - Insight Fetcher: Starting for industry 'Retail'.
+2025-07-04 22:49:22,960 - INFO - Insight Fetcher: Found cached insight for 'Retail'.
+2025-07-04 22:49:22,960 - INFO - Insight Fetcher: Starting for industry 'Education'.
+2025-07-04 22:49:22,960 - INFO - Insight Fetcher: Found cached insight for 'Education'.
+2025-07-04 22:49:22,961 - INFO - Insight Fetcher: Starting for industry 'Hospitality'.
+2025-07-04 22:49:22,961 - INFO - Insight Fetcher: Found cached insight for 'Hospitality'.
+2025-07-04 22:49:22,962 - INFO - Insight Fetcher: Starting for industry 'Finance'.
+2025-07-04 22:49:22,964 - INFO - Insight Fetcher: Found cached insight for 'Finance'.
+2025-07-04 22:49:22,982 - INFO - RAG Process: All industries processed for insights.
+2025-07-04 22:49:22,995 - INFO - RAG Process: Enriched data saved to CSV: f:\AI-Projects\SaaSquatchy_Project\lead_scoring_tool\src\..\data\leads.csv
+2025-07-04 22:49:23,028 - ERROR - RAG Process Error: Failed to save enriched leads to DB: "['score'] not in index"
+Traceback (most recent call last):
+  File "f:\AI-Projects\SaaSquatchy_Project\lead_scoring_tool\src\rag.py", line 206, in enrich_with_rag
+    df_to_db = df[['id', 'company_name', 'industry', 'phone', 'address', 'email', 'revenue', 'score', 'insights']].copy()
+               ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\AI-Projects\SaaSquatchy_Project\.venv\Lib\site-packages\pandas\core\frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\AI-Projects\SaaSquatchy_Project\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "F:\AI-Projects\SaaSquatchy_Project\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 6252, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['score'] not in index"
+2025-07-04 22:49:23,109 - INFO - 
+First 5 leads after RAG enrichment (showing company, industry, and insights):
+2025-07-04 22:49:23,135 - INFO -                company_name      industry                                                                                                                                                                                                                                                                                                                                                                                                  insights
+0                   Wang Co   Real Estate                                                                                                                                                                                                                      Could not retrieve specific strategic insights for 'Real Estate' from Wikipedia after multiple attempts. General overview might be limited or content not directly business-focused.
+1              Barton, Corp    Technology                                                                                                                                                                  technology is the application of conceptual knowledge to achieve practical goals . technology plays a critical role in science, engineering, and everyday life . technological advancements have led to significant changes in society .
+2           Houston Systems  Construction                                                                                                                                                                                                                     Could not retrieve specific strategic insights for 'Construction' from Wikipedia after multiple attempts. General overview might be limited or content not directly business-focused.
+3  Scott-Rodriguez Partners    Healthcare  health care is the improvement or maintenance of health through prevention, diagnosis, treatment, amelioration or cure of disease, illness, injury, and other physical and mental impairments . access to health care may vary across countries, communities, and individuals . factors to consider in terms of health care access include financial limitations, geographical and logistical barriers .
+4               Myers, Corp        Retail                                                                                                                                                                                          retailers are the final link in the supply chain from producers to consumers . retail markets and shops have a long history, dating back to antiquity . some of the earliest retailers were itinerant peddlers .
+2025-07-04 22:49:23,136 - INFO - --- RAG Module Test Run Finished ---

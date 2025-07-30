@@ -1,0 +1,14 @@
+credentials:
+  usernames:
+    alice:
+      name: Alice
+      # Replace with your hashed password (bcrypt hash)
+      password: "$2b$12$MSiCxR59uAN80rHGB8iRTOirfapHFPW8rJXdmXJ1P9j.T8Z1QV3yG"
+    bob:
+      name: Bob
+      password: "$2b$12$phlVhf0b4dZ2It6m4tuRKOga.uxT7VPfZjGkdpYf/MVpF0VbkduXq"
+    
+cookie:
+  name: auth_cookie
+  key: some_random_complex_key
+  expiry_days: 1
